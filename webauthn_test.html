@@ -6,7 +6,7 @@ async function registerCredential(options = {}) {
       requireResidentKey: false,
     },
     rp: {
-      id: "chromedriver.test",
+      id: "sadym-chromium.github.io",
       name: "ChromeDriver Test",
     },
     challenge: Uint8Array.from("challenge"),
@@ -39,7 +39,7 @@ async function registerCredential(options = {}) {
 async function getCredential(credential, options = {}) {
   options = Object.assign({
     challenge: Uint8Array.from("Winter is Coming"),
-    rpId: "chromedriver.test",
+    rpId: "sadym-chromium.github.io",
     allowCredentials: [credential],
     userVerification: "preferred",
   }, options);
